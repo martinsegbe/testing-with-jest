@@ -1,0 +1,22 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "A Jest + npm lab session",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koddas/testing-with-jest.git"
+  },
+  "author": "Johan Holmberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/koddas/testing-with-jest/issues"
+  },
+  "homepage": "https://github.com/koddas/testing-with-jest#readme",
+  "dependencies": {
+    "underscore": "^1.9.1"
+  }
+}
