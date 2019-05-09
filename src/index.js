@@ -8,7 +8,8 @@ window.onload = function () {
   var display = document.getElementById('top_of_stack');
 
   pop.addEventListener("click", function() {
-    var x = "Tog bort " + stack.pop();
+    var text = "Tog bort " + stack.pop();
+    alert(text);
   });
   push.addEventListener("click", function() {
     var x = prompt("Vad ska vi lägga på stacken?");
