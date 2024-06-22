@@ -1,3 +1,3 @@
 #testing-with-jest
 A Jest  + npm lab session
-Små förändringar till README.nd
+The project is made as a demo for my student
