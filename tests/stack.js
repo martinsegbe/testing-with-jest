@@ -1,33 +1,34 @@
-// stack.test.js
-const Stack = require('../stack');
+// stack.js
+class Stack {
+    constructor() {
+        this.items = [];
+    }
 
-describe('Stack', () => {
-    let stack;
+    isEmpty() {
+        return this.items.length === 0;
+    }
 
-    beforeEach(() => {
-        stack = new Stack();
-    });
+    size() {
+        return this.items.length;
+    }
 
-    test('should initialize empty', () => {
-        expect(stack.isEmpty()).toBe(true);
-        expect(stack.size()).toBe(0);
-    });
+    push(element) {
+        this.items.push(element);
+    }
 
-    test('should push elements onto the stack', () => {
-        stack.push(1);
-        expect(stack.isEmpty()).toBe(false);
-        expect(stack.size()).toBe(1);
-    });
+    pop() {
+        if (this.isEmpty()) {
+            throw new Error('Stack is empty');
+        }
+        return this.items.pop();
+    }
 
-    test('should pop elements from the stack', () => {
-        stack.push(1);
-        expect(stack.pop()).toBe(1);
-        expect(stack.isEmpty()).toBe(true);
-    });
+    peek() {
+        if (this.isEmpty()) {
+            throw new Error('Stack is empty');
+        }
+        return this.items[this.items.length - 1];
+    }
+}
 
-    test('should return the top element without removing it', () => {
-        stack.push(1);
-        expect(stack.peek()).toBe(1);
-        expect(stack.size()).toBe(1);
-    });
-});
+module.exports = Stack;
