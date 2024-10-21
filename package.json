@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/martinsegbe/testing-with-jest/issues"
   },
-  "homepage": "https://github.com/martinsegbe/testing-with-jest#readme"
+  "homepage": "https://github.com/martinsegbe/testing-with-jest#readme",
+  "dependencies": {
+    "underscore": "^1.13.7"
+  }
 }
