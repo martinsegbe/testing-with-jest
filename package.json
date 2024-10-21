@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/martinsegbe/testing-with-jest#readme",
   "dependencies": {
+    "geckodriver": "^4.5.1",
+    "selenium-webdriver": "^4.25.0",
     "underscore": "^1.13.7"
   },
   "devDependencies": {
